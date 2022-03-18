@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font-Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <!-- Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    
+    <!-- Link a VUE.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vue To Do List</title>
+</head>
+<body>
+    <main id="root">
+        <div class="container-fluid">
+            <section class="row p-5">
+                <div class="col-12 mb-3 text-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Recipient's todo's" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-warning" type="button" id="button-addon2">Button</button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="p-5">
+                        <ul class="bg-light bg-gradient rounded">
+                            <li class="todo-element d-flex justify-content-between align-items-center p-3 fs-5">
+                                <p class="m-0">ciao</p>
+                                <span><i class="fas fa-xmark"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Link al JS -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
