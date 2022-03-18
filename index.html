@@ -34,10 +34,10 @@
                 </div>
                 <div class="col-12">
                     <div>
-                        <ul class="p-5 bg-light bg-gradient rounded" v-for="(item, index) in todos">
-                            <li class="todo-item d-flex justify-content-between align-items-center p-3 fs-5 rounded">
+                        <ul class="p-5 bg-light bg-gradient rounded" v-if="">
+                            <li class="todo-item d-flex justify-content-between align-items-center p-3 mb-3 fs-5 rounded" v-for="(item, index) in todos">
                                 <p class="m-0">{{item.text}}</p>
-                                <span><i class="fas fa-xmark"></i></span>
+                                <span @click=""><i class="fas fa-xmark"></i></span>
                             </li>
                         </ul>
                     </div>
