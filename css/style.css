@@ -2,6 +2,9 @@ body{
     font-family: "Montserrat", sans-serif;
     background-color: rgb(16, 78, 248);
 }
+li.todo-item{
+    background-color: lightsteelblue;
+}
 
 i.fa-xmark{
     cursor: pointer;
