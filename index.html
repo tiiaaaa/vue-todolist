@@ -28,18 +28,19 @@
             <section class="row p-5">
                 <div class="col-12 mb-3 text-center">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Recipient's todo's" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-warning" type="button" id="button-addon2">Button</button>
+                        <input type="text" v-model="todoContent" class="form-control" placeholder="Recipient's todo's">
+                        <button class="btn btn-outline-warning" @click="addTodoElement(todoContent)" type="button" id="button-addon2">Aggiungi</button>
                     </div>
                 </div>
                 <div class="col-12">
-                    <div>
-                        <ul class="p-5 bg-light bg-gradient rounded" v-if="">
-                            <li class="todo-item d-flex justify-content-between align-items-center p-3 mb-3 fs-5 rounded" v-for="(item, index) in todos">
+                    <div class="bg-light rounded p-5">
+                        <ul class="p-0">
+                            <li class="todo-item d-flex justify-content-between align-items-center p-3 mb-3 fs-5 rounded" v-for="(item, index) in todoList">
                                 <p class="m-0">{{item.text}}</p>
-                                <span @click=""><i class="fas fa-xmark"></i></span>
+                                <span @click="removeTodoElement(index)"><i class="fas fa-xmark"></i></span>
                             </li>
                         </ul>
+                        <h2>Non ci sono todo</h2>
                     </div>
                 </div>
             </section>

@@ -4,6 +4,7 @@ body{
 }
 li.todo-item{
     background-color: lightsteelblue;
+    border-bottom: 1px solid lightslategray;
 }
 
 i.fa-xmark{
